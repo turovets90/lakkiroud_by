@@ -22,6 +22,37 @@ $(document).ready(function(){
 
 
 
+    if($(".brands_slider > div").length >4){
+        $('.brands_slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            dots:true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                        dots:true
+                    }
+                }
+            ]
+        });
+    }
+
+
 
     /*
     if($('.main_slider > div').length >1){
