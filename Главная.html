@@ -48,9 +48,14 @@
           <div class="main_menu">
             <div class="mm_close"></div>
             <ul class="nav">
-              <li><a class="active" href="#"><span class="icon"><img src="img/icon_1.png"/></span><span class="item_text">Главная</span></a></li>
+              <li class="active"><a href="#"><span class="icon"><img src="img/icon_1.png"/></span><span class="item_text">Главная</span></a></li>
               <li><a href="#"><span class="icon"><img src="img/icon_2.png"/></span><span class="item_text">О компании</span></a></li>
-              <li><a href="#"><span class="icon"><img src="img/icon_3.png"/></span><span class="item_text">Каталог шин</span></a></li>
+              <li class="has_submenu"><a href="#"><span class="icon"><img src="img/icon_3.png"/></span><span class="item_text">Каталог шин</span></a>
+                <ul class="sub_menu">
+                  <li><a href="#"><span class="icon"><img src="img/s_icon_1.png"/></span><span class="item_text">Летние и всесезонные</span></a></li>
+                  <li><a href="#"><span class="icon"><img src="img/s_icon_2.png"/></span><span class="item_text">Зимние шины</span></a></li>
+                </ul>
+              </li>
               <li><a href="#"><span class="icon"><img src="img/icon_4.png"/></span><span class="item_text">Доставка</span></a></li>
               <li><a href="#"><span class="icon"><img src="img/icon_5.png"/></span><span class="item_text">Оплата</span></a></li>
               <li><a href="#"><span class="icon"><img src="img/icon_6.png"/></span><span class="item_text">Контакты</span></a></li>
@@ -82,7 +87,7 @@
         </div>
       </div>
     </nav>
-    <!--include inc/index/content.pug-->
+    <div class="main_banner" style="background-image:url(img/tyres_hotel.png)"></div>
     <!--include inc/footer.pug-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
