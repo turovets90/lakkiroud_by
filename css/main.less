@@ -852,3 +852,90 @@ body{
     color: #fff;
   }
 }
+
+
+
+footer{
+  background: #171717;
+  padding: 45px 0;
+
+  @media (max-width:767px){
+    padding: 30px 0;
+  }
+
+
+  .logo{
+    margin-bottom: 30px;
+  }
+  .copyright{
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+    p{
+      color: #fff;
+    }
+    li{color: #fff;
+      a{
+        color: #fff;
+        &:hover, &:focus{
+          color: #b92828;
+        }
+      }
+    }
+
+
+
+  .f_nav{
+    @media (max-width:767px){
+      margin-bottom: 20px;
+    }
+    li{
+      margin-bottom: 3px;
+    }
+  }
+
+  .c_list{
+    margin-bottom: 30px;
+  }
+
+  .w_list{
+    @media (max-width:767px){
+      margin-bottom: 20px;
+    }
+  }
+
+  .l_list{
+    li{
+      margin-bottom: 25px;
+      a{
+        text-decoration: underline;
+        display: inline-block;
+        position: relative;
+        padding-left: 40px;
+        &:before{
+          .b_a();
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &.order_call{
+            &:before{
+              background: url(../img/call-answer2.png);
+              width: 30px;
+              height: 30px;
+            }
+        }
+        &.instagram{
+          &:before{
+            background: url(../img/instagram2.png);
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+}
