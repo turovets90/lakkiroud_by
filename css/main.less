@@ -1686,23 +1686,127 @@ h1, .h1{
 
 
 .contacts_page_row{
-  .c_col_left{
-    max-width: 610px;
-    padding: 30px 50px 5px;
-      .border-radius(10px);
-      background-color: rgb(248, 248, 248);
-      .box-shadow(0 4px 7px 0 rgba(0, 0, 0, 0.2));
+  .flex();
+  .wrap();
+  .j-beetween();
 
+  .c_col_right{
+    .flex();
+    @media (min-width:768px){
+      .j-end();
+    }
+    .contact_form_block{
+      width: 100%;
+      .border-radius(10px);
+      background-color: rgb(235, 235, 235);
+      .box-shadow(0 4px 7px 0 rgba(0, 0, 0, 0.2));
+      padding: 35px 60px 45px;
+      position: relative;
+      @media (min-width:768px){
+        max-width: 395px;
+      }
+      @media (max-width:1200px){
+        padding: 35px 30px 45px;
+      }
+      @media (max-width:767px){
+        padding: 15px;
+      }
+      img.car{
+        position: absolute;
+        top: -50px;
+        right: 10px;
+        @media (max-width:991px){
+          display: none;
+        }
+      }
+
+
+      .contact_form{
+        .sub_title{
+          color: #2f2f2f;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 0;
+          line-height: 1;
+        }
+        .f_title{
+          font-size: 28px;
+          color: @red;
+          font-weight: bold;line-height: 1;
+        }
+        .btn_custom{
+          width: 100%;
+          margin-top: 10px;
+        }
+        .field{
+          margin-bottom: 15px;
+          label{
+            color: #424242;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 0;
+          }
+          .form-control{
+            .border-radius(3px);
+            background-color: rgb(248, 248, 248);
+            .box-shadow(0 5px 5px 0 rgba(0, 0, 0, 0.1));
+            height: 26px;
+            border:0;
+
+
+
+            &::-webkit-input-placeholder{}
+            &::-moz-placeholder{}
+            &:-ms-input-placeholder{}
+            &::-ms-input-placeholder{}
+            &:-moz-placeholder{}
+
+          }
+          textarea.form-control{
+            height: 140px;
+          }
+
+
+        }
+
+      }
+
+    }
+  }
+
+  .c_col_left{
+    width: 100%;
+    padding: 30px 60px 5px;
+    .border-radius(10px);
+    background-color: rgb(248, 248, 248);
+    .box-shadow(0 4px 7px 0 rgba(0, 0, 0, 0.2));
+    @media (min-width:768px){
+      max-width: 610px;
+    }
+    @media (max-width:1200px){
+      padding: 30px 30px 5px;
+    }
+    @media (max-width:767px){
+      padding: 15px;
+      margin-bottom: 20px;
+    }
     .c_title{
       margin-bottom: 0;
       color: #414141;
       font-size: 16px;
+      @media (max-width:767px){
+        font-size: 14px;
+      }
     }
 
     .attention{
       font-size: 20px;
       color: @red;
       font-weight: bold;
+      @media (max-width:767px){
+        font-size: 18px;
+      }
     }
     .c_group{
       margin-bottom: 20px;
@@ -1710,10 +1814,15 @@ h1, .h1{
         li{
           color: #414141;
           font-size: 22px;
+          @media (max-width:767px){
+            font-size: 18px;
+          }
           a{
             color: #414141;
             font-size: 22px;
-
+            @media (max-width:767px){
+              font-size: 18px;
+            }
             &.instagram{
               display: inline-block;
               position: relative;
