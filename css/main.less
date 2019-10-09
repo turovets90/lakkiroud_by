@@ -122,7 +122,7 @@
 
 @Futura_Normal:'Futura Normal';
 
-
+@red:#be1313;
 .container{
   max-width: 1200px;
 }
@@ -1089,5 +1089,259 @@ footer{
 
     }
 
+  }
+}
+
+
+
+.main_products{
+  padding: 70px 0;
+  @media (max-width:1200px){
+    padding: 50px 0;
+  }
+  @media (max-width:767px){
+    padding: 30px 0;
+  }
+}
+
+.products_list{
+  .flex();
+  .wrap();
+  .product_item{
+    margin-bottom: 30px;
+    .border-radius(5px);
+    background-color: rgb(247, 247, 247);
+    .box-shadow(0 4px 7px 0 rgba(0, 0, 0, 0.2));
+    padding: 26px 55px 10px 10px;
+    width: 100%;
+    @media (min-width:1200px){
+      height: 220px;
+      overflow: hidden;
+    }
+
+
+    @media (max-width:931px){
+      width: 100%;
+      margin: 0 0 20px;
+      padding: 15px;
+    }
+
+      .product_flex{
+        .flex();
+        .wrap();
+        @media (max-width:930px){
+          .j-center();
+        }
+
+        .col_left{
+          .flex();
+          .wrap();
+          padding-right: 20px;
+          @media (min-width:931px){
+            width: calc(100% - 415px);
+          }
+          @media (max-width:1200px){
+            margin-bottom: 20px;
+            padding-right: 30px;
+          }
+          @media (max-width:767px){
+            padding-right: 0;
+          }
+
+          .label{
+            width: 45px;
+            min-width: 45px;
+            margin-right: 25px;
+          }
+
+          .product_img{
+            margin-right: 50px;
+            padding-right: 10px;
+            @media (max-width:1200px){
+              margin-right: 10px;
+              img{
+                max-width: 100px;
+              }
+            }
+          }
+
+        }
+
+
+        .product_info{
+          @media (max-width:480px){
+            width: 100%;
+          }
+          .pr_title{
+            color: #414141;
+            font-size: 24px;
+            text-decoration: none;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            display: inline-block;
+            &:hover, &:focus{
+              text-decoration: none;
+              color: @red;
+            }
+              span{
+                display: block;
+                font-size: 30px;
+                text-transform: uppercase;
+              }
+          }
+
+          .size{
+            color: #414141;
+            font-size: 24px;
+            margin-bottom: 18px;
+          }
+
+          .season{
+            .flex();
+            .ai-center();
+            picture{
+              width: 40px;
+              min-width: 40px;
+              margin-right: 10px;
+            }
+            .text{
+              color: #464646;
+              font-size: 24px;
+              //font-weight: bold;
+              text-transform: uppercase;
+              .border-radius(6px);
+              line-height: 1;
+              background-color: rgb(229, 229, 229);
+              padding: 5px 30px 5px 15px;
+              position: relative;
+              &:before{
+                .b_a();
+                right: 10px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url(../img/next1.png);
+                width: 6px;
+                height: 10px;
+              }
+            }
+          }
+
+
+        }
+
+
+        .col_right{
+          @media (min-width:931px){
+            min-width: 415px;
+          }
+          @media (max-width:1200px){
+            @media (min-width:901px){
+              //width: 100%;
+            }
+          }
+          .btn_group{
+            .flex();
+            .wrap();
+            margin-top: 20px;
+
+            button{
+              @media (max-width:480px){
+                width: 100%;
+                margin-bottom: 10px;
+              }
+            }
+
+            .btn_custom.bg_white{
+              background: none;
+              .box-shadow(none);
+              border:2px solid @red;
+              color: @red;
+              padding: 10px 46px;
+              margin-right: 12px;
+              @media (max-width:480px){
+                margin-right: 0;
+              }
+            }
+
+            .btn_custom{
+              @media (min-width:1200px){
+                padding: 12px 70px;
+              }
+              background-image: -moz-linear-gradient( 90deg, rgb(222,37,38) 0%, rgb(249,88,87) 100%);
+              background-image: -webkit-linear-gradient( 90deg, rgb(222,37,38) 0%, rgb(249,88,87) 100%);
+              background-image: -ms-linear-gradient( 90deg, rgb(222,37,38) 0%, rgb(249,88,87) 100%);
+
+            }
+
+
+          }
+
+          .in_stock, .kit_cost{
+            font-size: 16px;
+            color: #696969;
+            font-weight: bold;
+            line-height: 1.2;
+            span{
+              color: #212121;
+            }
+          }
+
+          .price_flex{
+            .flex();
+            .wrap();
+            .price{
+              font-size: 36px;
+              font-weight: bold;
+              .flex();
+              line-height: 1;
+              margin-bottom: 15px;
+              span{
+                font-size: 20px;
+                .flex();
+                .ai-start();
+                padding-top: 2px;
+                margin-right: 8px;
+              }
+            }
+
+            .price_text{
+              color: #535353;
+              font-size: 14px;
+              .flex();
+              .ai-center();
+              font-weight: bold;
+              span{
+                &[data-toggle="tooltip"]{
+                  width: 17px;
+                  height: 17px;
+                  .border-radius(50%);
+                  background: #DCDCDC;
+                  .flex();
+                  .j-center();
+                  .ai-center();
+                  line-height: initial;
+                  margin-left: 7px;
+                }
+              }
+            }
+
+            .price_item{
+              //@media (min-width:1200px){
+                min-width: 220px;
+              //}
+              .price{
+                color: #262626;
+              }
+            }
+            .discount_price_item{
+              .price{
+                color: @red;
+              }
+            }
+          }
+        }
+
+      }
   }
 }

@@ -54,6 +54,11 @@ $(document).ready(function(){
 
 
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
     /*
     if($('.main_slider > div').length >1){
         $('.main_slider').slick({
