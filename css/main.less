@@ -971,12 +971,19 @@ footer{
     @media (max-width:767px){
       padding: 20px 0;
     }
+    @media (max-width:575px){
+      padding: 10px 0;
+    }
   }
   .choose_tires_item{
     max-width: 390px;
+    min-width: 280px;
     background: #ECECEC;
     .border-radius(10px);
     .box-shadow(0 0 32px 0 rgba(0, 0, 0, 0.004));
+    @media (min-width:1200px){
+      width: 390px;
+    }
 
 
     .choose_tires_item_head{
@@ -985,6 +992,7 @@ footer{
       .flex();
       .j-beetween();
       .ai-center();
+      .border-radius(10px 10px 0 0);
       .box-shadow(0 5px 5px 0 rgba(0, 0, 0, 0.17));
       @media (max-width:767px){
         padding: 5px 5px 5px 15px;
@@ -1000,6 +1008,7 @@ footer{
         font-size: 20px;
         font-weight: bold;
         line-height: 1;
+        min-width: 145px;
         @media (max-width:767px){
           width: 60%;font-size: 18px;
         }
@@ -1009,6 +1018,7 @@ footer{
 
     .choose_tires_item_body{
       padding: 30px 55px;
+
       @media (max-width:767px){
         padding: 20px 15px;
       }
@@ -1071,6 +1081,7 @@ footer{
             background-color: rgb(248, 248, 248);
             .box-shadow(0 5px 5px 0 rgba(0, 0, 0, 0.1));
             padding-left: 10px;
+            padding-right: 30px;
             font-size: 18px;
             @media (max-width:1200px){
               font-size: 16px;
@@ -1343,5 +1354,324 @@ footer{
         }
 
       }
+  }
+}
+
+
+
+
+.page_content{
+  padding-top: 18px;
+  @media (max-width:767px){
+    padding-top: 5px;
+  }
+}
+
+.breadcrumb{
+  background: none;
+  padding-left: 0;
+  li{
+    padding: 0 11px;
+    position: relative;
+    &:first-child{
+      padding-left: 0;
+    }
+    &:last-child{
+      a{
+        text-decoration: none;
+      }
+    }
+
+
+    +li{
+      &:before{
+        content:'|';
+        position: absolute;
+        left:-1px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #737373;
+        font-size: 16px;
+      }
+    }
+
+
+    a{
+      .flex();
+      text-decoration: underline;
+      color: #737373;
+      font-size: 16px;
+
+      &:hover, &:focus{
+        text-decoration: none;
+      }
+      span{
+        color: #737373;
+        font-size: 16px;
+
+        &.icon{
+          margin-right: 4px;
+          img{
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+h1, .h1{
+  color: #414141;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+
+.page_content{
+
+  .choose_tires_list{
+    @media (min-width:1200px){
+      .j-start();
+    }
+  }
+
+  .choose_tires_list .choose_tires_block{
+    &:first-child{
+      @media (min-width:1200px){
+        padding-left: 0;
+      }
+    }
+  }
+
+  .choose_tires_list .choose_tires_item .choose_tires_item_body{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: #ECECEC;
+  }
+
+
+  .choose_tires_list .choose_tires_item .choose_tires_item_head{
+    .border-radius(10px);
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+
+    &:before{
+      .b_a();
+      left: 24px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: url(../img/close_red.png);
+      width: 20px;
+      height: 12px;
+      .transition(@transition_default);
+      @media (max-width:767px){
+        left: 6px;
+      }
+    }
+  }
+
+
+  .choose_tires_list .choose_tires_item{
+    position: relative;
+
+    &.act{
+      z-index: 5;
+      .border-radius(10px 10px 0 0);
+      .choose_tires_item_head{
+        .border-radius(10px 10px 0 0);
+        &:before{
+          .transform(rotate(180deg));
+        }
+      }
+
+    }
+  }
+
+
+  @media (max-width:767px){
+    .choose_tires_list .choose_tires_item .choose_tires_item_head{
+      padding: 5px 5px 5px 30px;
+    }
+  }
+
+
+  .choose_tires_list{
+    margin-bottom: 50px;
+    @media (max-width:1200px){
+      margin-bottom: 40px;
+    }
+    @media (max-width:767px){
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+
+.select{
+  display: inline-block;
+  position: relative;
+  &:before{
+    .b_a();
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(../img/next.png);
+    width: 10px;
+    height: 6px;
+    pointer-events: none;
+  }
+  select{
+    width: 100%;
+    border:0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 27px;
+    .border-radius(2px);
+    background-color: rgb(248, 248, 248);
+    .box-shadow(0 5px 5px 0 rgba(0, 0, 0, 0.1));
+    padding-left: 10px;
+    padding-right: 55px;
+    font-size: 18px;
+    @media (max-width:1200px){
+      font-size: 16px;
+    }
+
+    option{
+      padding-left: 10px;
+      font-size: 18px;
+      @media (max-width:1200px){
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+.sort_block{
+  .flex();
+  .wrap();
+  margin-bottom: 15px;
+  > div{
+    width: 50%;
+    @media (max-width:991px){
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .col_right{
+    @media (min-width:992px){
+      .flex();
+      .j-end();
+    }
+  }
+  .col_left{
+    .flex();
+    .wrap();
+    > div{
+      color:#636363;
+      font-size: 18px;
+      &:first-child{
+        margin-right: 38px;
+      }
+      strong{
+        color: #2d2d2d;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+.pagination_block{
+  .flex();
+  .wrap();
+  .ai-center();
+  .j-beetween();
+  margin-bottom: 70px;
+  @media (max-width:1200px){
+    margin-bottom: 50px;
+  }
+  @media (max-width:767px){
+    margin-bottom: 30px;
+  }
+  > div{
+    color: #2d2d2d;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+  }
+
+  .pagination_list{
+    .flex();
+
+
+    li{
+      a{
+        display: inline-block;
+        .border-radius(10px);
+        background-color: rgb(83, 83, 83);
+        .box-shadow(0 5px 5px 0 rgba(0, 0, 0, 0.1));
+        width: 39px;
+        height: 38px;
+        position: relative;
+        &:hover, &:focus{
+          background: #C0C0C0;
+        }
+        &:before{
+          .b_a();
+          .m_a();
+          width: 15px;
+          height: 26px;
+        }
+
+        &.disabled{
+          background: #C0C0C0;
+        }
+
+        &.prev{
+          &:before{
+            background: url(../img/left_page.png);
+          }
+        }
+        &.next{
+          margin-left: 20px;
+          @media (max-width:575px){
+            margin-left: 10px;
+          }
+          &:before{
+            background: url(../img/right_page.png);
+          }
+        }
+        }
+
+
+      }
+    }
+  }
+
+
+
+
+.page_desc{
+  background: #EDEDED;
+  padding: 70px 0;
+  @media (max-width:1200px){
+    padding: 50px 0;
+  }
+  @media (max-width:767px){
+    padding: 30px 0;
   }
 }

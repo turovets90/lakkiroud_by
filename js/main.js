@@ -56,7 +56,16 @@ $(document).ready(function(){
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
+
+
+    $('.page_content .choose_tires_item_head').click(function(){
+        $(this).next().slideToggle();
+        $(this).parent().toggleClass('act');
+    });
+
+
+
 
 
     /*
