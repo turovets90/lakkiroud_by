@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Оформление заказа</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!--link(rel="shortcut icon" href="img/favicon.ico")-->
+    <link rel="stylesheet" href="css/main.css"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_row">
+          <div class="logo"><a href="#"><img src="img/LOgo.png"/></a></div>
+          <div class="location">
+            <div><span>г.Минск, ул.Уборевича 99</span><span>пав.104-105</span></div>
+          </div>
+          <div class="work">
+            <div><span>Будни 9.00-18.00</span><span>Выходные 9.00-14.00</span></div>
+          </div>
+          <div class="feedback j_center">
+            <div class="dropdown">
+              <button class="dropdown_toggle" type="button" id="h_contacts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Связаться с нами</button>
+              <div class="dropdown-menu" aria-labelledby="h_contacts">
+                <div class="d-flex justify-content-center">
+                  <ul>
+                    <li><a class="phone" href="tel:+375 29 123-45-67">+375 29 123-45-67</a></li>
+                    <li><a class="phone" href="tel:+375 25 234-56-78">+375 25 234-56-78</a></li>
+                    <li><a class="email" href="mailto:lakkiroud@gmail.com">lakkiroud@gmail.com</a></li>
+                    <li><a class="instagram" href="#">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order_call j_center">
+            <button class="order_btn" data-toggle="modal" data-target="#">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="main_nav">
+      <div class="container">
+        <div class="nav_flex">
+          <div class="main_menu">
+            <div class="mm_close"></div>
+            <ul class="nav">
+              <li><a href="#"><span class="icon"><img src="img/icon_1.png"/></span><span class="item_text">Главная</span></a></li>
+              <li><a href="#"><span class="icon"><img src="img/icon_2.png"/></span><span class="item_text">О компании</span></a></li>
+              <li class="has_submenu"><a href="#"><span class="icon"><img src="img/icon_3.png"/></span><span class="item_text">Каталог шин</span></a>
+                <ul class="sub_menu">
+                  <li><a href="#"><span class="icon"><img src="img/s_icon_1.png"/></span><span class="item_text">Летние и всесезонные</span></a></li>
+                  <li><a href="#"><span class="icon"><img src="img/s_icon_2.png"/></span><span class="item_text">Зимние шины</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="icon"><img src="img/icon_4.png"/></span><span class="item_text">Доставка</span></a></li>
+              <li><a href="#"><span class="icon"><img src="img/icon_5.png"/></span><span class="item_text">Оплата</span></a></li>
+              <li><a href="#"><span class="icon"><img src="img/icon_6.png"/></span><span class="item_text">Контакты</span></a></li>
+            </ul>
+            <div class="mm_info">
+              <div class="location">
+                <div><span>г.Минск, ул.Уборевича 99</span><span>пав.104-105</span></div>
+              </div>
+              <div class="work">
+                <div><span>Будни 9.00-18.00</span><span>Выходные 9.00-14.00</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav_right">
+            <div class="search_block">
+              <form class="search_form">
+                <button class="search_btn" type="submit"></button>
+                <input class="form-control" type="text" placeholder="Найти..."/>
+              </form>
+            </div><a class="cart_link" href="#">
+              <div>
+                <div class="cart_icon"><img src="img/shopping-cart.png"/></div>
+                <div class="cart_text"><span>Корзина</span><span> (4)</span></div>
+              </div></a>
+          </div>
+          <div class="mm_btn">
+            <button class="hamburger"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container page_content">
+      <ul class="breadcrumb">
+        <li><a href="#"><span class="icon"><img src="img/home-icon-silhouette.png"/></span><span>Главная</span></a></li>
+        <li><a href="#"><span class="icon"><img src="img/shopping_cart.png"/></span><span>Оформление заказа</span></a></li>
+      </ul>
+      <h1>Оформление заказа</h1>
+      <form class="cart_form">
+        <div class="order_content">
+          <div class="payment_methods">
+            <h3>Выберите способ оплаты</h3>
+            <div class="row payment_methods_list">
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="payment_method" id="payment_method_1"/>
+                  <label for="payment_method_1">
+                    <div>
+                      <picture><img src="img/pay_1.png"/></picture>
+                      <div class="text">КАРТА ПОКУПОК</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="payment_method" id="payment_method_2"/>
+                  <label for="payment_method_2">
+                    <div>
+                      <picture><img src="img/pay_2.png"/></picture>
+                      <div class="text">ЧЕРЕПАХА</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="payment_method" id="payment_method_3"/>
+                  <label for="payment_method_3">
+                    <div>
+                      <picture><img src="img/pay_3.png"/></picture>
+                      <div class="text">SMART КАРТА</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="payment_method" id="payment_method_4"/>
+                  <label for="payment_method_4">
+                    <div>
+                      <picture><img src="img/pay_4.png"/></picture>
+                      <div class="text">РАССРОЧКА</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="payment_method" id="payment_method_5"/>
+                  <label for="payment_method_5">
+                    <div>
+                      <picture><img src="img/pay_5.png"/></picture>
+                      <div class="text">наличные</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="payment_method" id="payment_method_6"/>
+                  <label for="payment_method_6">
+                    <div>
+                      <picture><img src="img/pay_6.png"/></picture>
+                      <div class="text">пластиковая карта</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivery_methods">
+            <h3>Выберите способ доставки</h3>
+            <div class="row delivery_methods_list">
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="delivery_method" id="delivery_method_1"/>
+                  <label for="delivery_method_1">
+                    <div>
+                      <picture><img src="img/del_1.png"/></picture>
+                      <div class="text">доставка</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                <div class="type_radio">
+                  <input type="radio" name="delivery_method" id="delivery_method_2"/>
+                  <label for="delivery_method_2">
+                    <div>
+                      <picture><img src="img/del_2.png"/></picture>
+                      <div class="text">самовывоз</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="delivery_block">
+              <div class="h2">Доставка</div>
+              <p>Какой-то текст с небольшим описанием, как происходит доставка, в какие города и на киких условиях. Стоимость выбранного типа доставки.</p>
+              <div class="delivery_form b_bottom">
+                <div class="field_group1">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-6">
+                      <div class="field">
+                        <label>Город доставки</label>
+                        <div class="select">
+                          <select>
+                            <option>Минск</option>
+                            <option>Минск</option>
+                            <option>Минск</option>
+                            <option>Минск</option>
+                            <option>Минск</option>
+                            <option>Минск</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label>Адрес доставки*</label>
+                        <textarea class="form-control address"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-6">
+                      <label>Комментарий</label>
+                      <textarea class="form-control comment" placeholder="Удобное время доставки и др."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery_form">
+                <div class="field_group2">
+                  <p>Укажите контактные данные, чтобы мы могли связаться с Вами</p>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                      <div class="field">
+                        <label>Ваше имя*</label>
+                        <input class="form-control" type="text"/>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                      <div class="field">
+                        <label>Ваш email*</label>
+                        <input class="form-control" type="text" placeholder="example@mail.com"/>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                      <label>Ваш номер телефона*</label>
+                      <input class="form-control" type="text" value="+375 (__) ___ __ __"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products_in_order">
+          <h3>Товары в заказе</h3>
+          <div class="products_list">
+            <div class="product_item">
+              <button class="cancel"></button>
+              <div class="product_flex">
+                <div class="col_left">
+                  <div class="product_img"><a href="#"><img src="img/tire.png"/></a></div>
+                  <div class="product_info"><a class="pr_title" href="#">PIRELLI Cinturato P1 Verde</a>
+                    <div class="d_flex">
+                      <div class="season">
+                        <picture><img src="img/snowflake.svg"/></picture>
+                        <div class="text">91 H</div>
+                      </div>
+                      <div class="size">195/65 R15</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col_right">
+                  <div class="price_row">
+                    <div class="pr_col pr_col1">
+                      <div class="amount"><span class="down">-</span>
+                        <input type="text" value="1"/><span class="up">+</span>
+                      </div>
+                    </div>
+                    <div class="pr_col pr_col2">
+                      <div class="price_flex">
+                        <div class="price">x 135<span>80</span> BYN</div>
+                      </div>
+                    </div>
+                    <div class="pr_col pr_col3">
+                      <div class="price_flex">
+                        <div class="price">135<span>80</span> BYN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <button class="cancel"></button>
+              <div class="product_flex">
+                <div class="col_left">
+                  <div class="product_img"><a href="#"><img src="img/tire.png"/></a></div>
+                  <div class="product_info"><a class="pr_title" href="#">PIRELLI Cinturato P1 Verde</a>
+                    <div class="d_flex">
+                      <div class="season">
+                        <picture><img src="img/snowflake.svg"/></picture>
+                        <div class="text">91 H</div>
+                      </div>
+                      <div class="size">195/65 R15</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col_right">
+                  <div class="price_row">
+                    <div class="pr_col pr_col1">
+                      <div class="amount"><span class="down">-</span>
+                        <input type="text" value="1"/><span class="up">+</span>
+                      </div>
+                    </div>
+                    <div class="pr_col pr_col2">
+                      <div class="price_flex">
+                        <div class="price">x 135<span>80</span> BYN</div>
+                      </div>
+                    </div>
+                    <div class="pr_col pr_col3">
+                      <div class="price_flex">
+                        <div class="price">135<span>80</span> BYN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total">
+            <div>
+              <div class="total_text">
+                <p>Сумма к оплате</p>
+                <div class="price">271<span>60</span> BYN</div>
+              </div>
+              <button class="btn_custom">Купить</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-xl-4">
+            <div class="logo"><a href="#"><img src="img/LOgo.png"/></a></div>
+            <p class="copyright">© Строки копирайта. Текст. Строки копирайта. Текст. Строки копирайта. Текст. Строки копирайта. Текст.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-xl-3">
+            <ul class="f_nav">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Каталог шин</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-xl-3">
+            <ul class="c_list">
+              <li><a href="tel:+375 25 123-45-67">+375 25 123-45-67</a></li>
+              <li><a href="tel:+375 25 234-56-78">+375 25 234-56-78</a></li>
+            </ul>
+            <ul class="w_list">
+              <li>Будни 9.00-18.00</li>
+              <li>Выходные 9.00-14.00</li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-xl-2">
+            <ul class="l_list">
+              <li><a class="order_call" href="#">Заказать звонок</a></li>
+              <li><a class="instagram" href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
