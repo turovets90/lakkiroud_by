@@ -861,9 +861,15 @@ body{
   .box-shadow(0 2px 0 0 rgba(169, 50, 49, 0.004));
   padding: 12px 46px;
   line-height: 1;
+  .transition(@transition_default);
   &:hover, &:focus{
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
+
+    background-image: -moz-linear-gradient( 90deg, rgb(247,82,81), rgb(185,40,40) 0% 100%) !important;
+    background-image: -webkit-linear-gradient( 90deg, rgb(247,82,81), rgb(185,40,40) 0% 100%)!important;
+    background-image: -ms-linear-gradient( 90deg, rgb(247,82,81), rgb(185,40,40) 0% 100%)!important;
+
   }
 }
 
