@@ -276,7 +276,8 @@ body{
           color: #fff;
           text-decoration: underline;
           &:before{
-            background: url(../img/call-answer.png);
+            background: url(../img/callme_white_hover.svg);
+            background-size: cover;
           }
         }
       }
@@ -301,9 +302,10 @@ body{
         top: 0;
         bottom: 0;
         margin: auto;
-        background: url(../img/call_me.png);
+        background: url(../img/callme_black.svg);
         width: 23px;
         height: 23px;
+        background-size: cover;
       }
     }
   }
@@ -379,9 +381,10 @@ body{
                   top: 0;
                   bottom: 0;
                   margin: auto;
-                  background: url(../img/instagram.png);
+                  background: url(../img/instagram_black.svg);
                   width: 19px;
                   height: 19px;
+                  background-size: cover;
                 }
               }
             }
@@ -710,6 +713,22 @@ body{
         min-width: 155px;
         &:hover, &:focus{
           text-decoration: none;
+          background: -moz-linear-gradient( 90deg, rgb(147,9,9) 0%, rgb(201,65,65) 100%);
+          background: -webkit-linear-gradient( 90deg, rgb(147,9,9) 0%, rgb(201,65,65) 100%);
+          background: -ms-linear-gradient( 90deg, rgb(147,9,9) 0%, rgb(201,65,65) 100%);
+          .cart_icon{
+            margin-right: 12px;
+            max-width: 30px;
+            .red{
+              display: none;
+            }
+            .white{
+              display: block;
+            }
+          }
+          .cart_text{
+            color: #fff;
+          }
         }
         @media (max-width:575px){
           min-width: 80px;
@@ -722,6 +741,11 @@ body{
         }
         .cart_icon{
           margin-right: 12px;
+          max-width: 30px;
+          .red{}
+          .white{
+            display: none;
+          }
         }
         .cart_text{
           color: #d73535;
@@ -912,16 +936,18 @@ footer{
         }
         &.order_call{
             &:before{
-              background: url(../img/call-answer2.png);
+              background: url(../img/callme_white_hover.svg);
               width: 30px;
               height: 30px;
+              background-size: cover;
             }
         }
         &.instagram{
           &:before{
-            background: url(../img/instagram2.png);
+            background: url(../img/instagram_white.svg);
             width: 30px;
             height: 30px;
+            background-size: cover;
           }
         }
       }
@@ -1487,6 +1513,7 @@ h2, .h2{
       background: url(../img/close_red.png);
       width: 20px;
       height: 12px;
+      background-size: cover;
       .transition(@transition_default);
       @media (max-width:767px){
         left: 6px;
