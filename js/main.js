@@ -59,7 +59,7 @@ $(document).ready(function(){
     });
 
 
-    $('.page_content .choose_tires_item_head').click(function(){
+    $('.choose_tires_item_head').click(function(){
         $(this).next().slideToggle();
         $(this).parent().toggleClass('act');
     });
