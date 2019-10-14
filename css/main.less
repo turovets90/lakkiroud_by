@@ -1048,9 +1048,7 @@ footer{
       .border-radius(10px 10px 0 0);
       .box-shadow(0 5px 5px 0 rgba(0, 0, 0, 0.17));
       position: relative;
-      @media (min-width:768px){
-        pointer-events: none;
-      }
+
       @media (max-width:767px){
         padding: 5px 5px 5px 30px;
         &:before{
@@ -2788,4 +2786,13 @@ h2, .h2{
 
 .modal-open {
   padding-right: 0 !important;
+}
+
+
+@media (min-width:768px){
+  .home{
+    .choose_tires_list .choose_tires_item .choose_tires_item_head{
+      pointer-events: none;
+    }
+  }
 }
